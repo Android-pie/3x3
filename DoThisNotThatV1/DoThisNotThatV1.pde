@@ -1,7 +1,8 @@
 float buttonX1, buttonY1, buttonX2, buttonY2, buttonWidth, buttonHeight, rectX, rectY, rectW, rectH;
 color black = #000000, white = #FFFFFF;
 PFont titleFont;
-Boolean rectangle, circle;
+Boolean rectangle;
+Boolean circle;
 
 void setup() {
 
@@ -12,8 +13,8 @@ void setup() {
   buttonWidth = width*1/10;
   rectX = width * 1/2;
   rectY = height * 1/2;
-  rectW = 
-  rectH 
+  rectW = height * 1/20;
+  rectH = height * 1/28;
   buttonHeight = height*1/10;
   titleFont = createFont ("Harrington", 55);
   background(black);
@@ -26,7 +27,7 @@ void draw() {
   rect(buttonX1, buttonY1, buttonWidth, buttonHeight);
   rect(buttonX2, buttonY2, buttonWidth, buttonHeight);
   if (rectangle = true && circle = false) rect( rectX, rectY, rectW, rectH );
-  if 
+  if (rectangle = false && circle = true) ellipse() 
 }
 
 void mousePressed() {

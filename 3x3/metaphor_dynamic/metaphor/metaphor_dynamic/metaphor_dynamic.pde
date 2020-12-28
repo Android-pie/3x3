@@ -6,11 +6,11 @@ float lefteyeX, lefteyeY, eyediameter;
 float righteyeX, righteyeY;
 float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouththick, mouthX1, mouthY1, mouthX2, mouthY2;
-float measlesX, measlesY, measlesdiameter, radius;
+float measlesX, measlesY, measlesdiameter, radius, measlesX1, measlesY1, measlesX2, measlesX3, measlesY2, measlesY3, measlesX4;
 float mouthX3, mouthY3, mouthX4, mouthY4;
 color measleColor = #1AE309, red = #FF0000, purple = #9400FF, orange = #FF8000, yellow = #F6FF00;
 void setup() {
-  size(600, 400);
+  fullScreen();
   //Populating varibles
   populating_varibles();
 
@@ -32,7 +32,18 @@ void draw() {
   radius = measlesdiameter/2;
   measlesX = random((FaceSquareX+radius)+(height*1/9), ((FaceSquareX+FaceSquareSide)-(height*1/9)-radius));
   measlesY = random((height*0+radius)+(height*1/6), (height-radius)-(height*1/6));
-  ellipse(measlesX, measlesY, measlesdiameter, measlesdiameter);
+  measlesX1 = random((FaceSquareX+radius)+(height*0.67/16), ((FaceSquareX+FaceSquareSide)-(height*10/16)-radius)); 
+  measlesY1 = random((height*0+radius)+(height*2/6), (height-radius)-(height*2/6));
+  measlesX2 = random((FaceSquareX+radius)+(height*10/16), ((FaceSquareX+FaceSquareSide)-(height*0.67/16)-radius)); 
+  measlesX3 = random((FaceSquareX+radius)+(height*6/16), ((FaceSquareX+FaceSquareSide)-(height*6/16)-radius));
+  measlesY2 = random((height*0+radius)+(height*0.1/6), (height-radius)-(height*0.1/6));
+  //measlesX4 =
+  //measlesY3 = 
+  //ellipse(measlesX, measlesY, measlesdiameter, measlesdiameter);
+  //ellipse(measlesX1, measlesY1, measlesdiameter, measlesdiameter);
+  //ellipse(measlesX2, measlesY1, measlesdiameter, measlesdiameter);
+  //ellipse(measlesX2, measlesY1, measlesdiameter, measlesdiameter);
+  ellipse(measlesX3, measlesY2, measlesdiameter, measlesdiameter);
   fill(red);
   //left eye
   ellipse(lefteyeX, lefteyeY, eyediameter, eyediameter);
