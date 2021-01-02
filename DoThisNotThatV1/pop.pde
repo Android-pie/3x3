@@ -1,4 +1,4 @@
-void population() {
+/*void population() {
   buttonX1 = width*1/4;
   buttonY1 = height*3/4;
   buttonWidth1 = width*1/5;
@@ -15,4 +15,4 @@ void population() {
   circleY = height*1/8;
   circleWidth = width*1/8;
   circleHeight = height*1/8;
-}
+}*/

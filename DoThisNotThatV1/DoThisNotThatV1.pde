@@ -1,8 +1,8 @@
 float buttonX1, buttonY1, buttonX2, buttonY2, buttonWidth, buttonHeight, rectX, rectY, rectW, rectH, triX, triY, triZ, triX2, triY2, triZ2;
 color black = #000000, white = #FFFFFF;
 PFont titleFont;
-Boolean rectangle;
-Boolean tri;
+Boolean rectangle=false;
+Boolean tri=false;
 
 void setup() {
 
@@ -37,5 +37,4 @@ void mousePressed() {
   
 if( mouseX>buttonX1 && mouseX<buttonX1+buttonWidth && mouseY>buttonY1 && mouseY<buttonY1+buttonHeight ) rectangle = true;
 if( mouseX>buttonX1 && mouseX<buttonX1+buttonWidth && mouseY>buttonY1 && mouseY<buttonY1+buttonHeight )tri = true;
-
 }
