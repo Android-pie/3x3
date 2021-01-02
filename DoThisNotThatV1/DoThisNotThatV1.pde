@@ -15,8 +15,8 @@ void setup() {
   buttonWidth1 = buttonWidth2 = width*1/5;
   rectX = width * 1/6;
   rectY = height * 1/6;
-  rectW = height * 1/20;
-  rectH = height * 1/28;
+  rectW = height * 1/7;
+  rectH = height * 1/11;
   buttonHeight1= buttonHeight2 = height*1/8;
   triX = width * 1/4;
   triY = height * 1/4; 
